@@ -1,0 +1,18 @@
+[package]
+name = "microscopio_rust"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+# Interface gráfica
+egui = "0.28"
+eframe = "0.28"
+
+# Captura de câmera profissional em Rust (suporte a V4L2 nativo no Linux)
+nokhwa = { version = "0.10", features = ["input-native", "input-v4l"] }
+
+# Processamento de imagem e gravação GIF
+image = "0.25"
+gif = "0.13"
+chrono = "0.4"
+open = "5.0"
